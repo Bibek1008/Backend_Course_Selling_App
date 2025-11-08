@@ -3,6 +3,7 @@ import { Router } from "express";
 
 const adminRouter=Router()
 
+import { adminModel } from '../db.js';
 
 
 adminRouter.post('/signup',(req,res)=>{
