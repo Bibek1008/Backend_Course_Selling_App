@@ -1,12 +1,14 @@
 
 
-const {Router}=require('express');
+import { Router } from 'express';
+
+
 
 
 const userRouter=Router()
 
 
-userRouter.post('/user/signup',(req,res)=>{
+userRouter.post('/signup',(req,res)=>{
 
   res.json({
 
@@ -15,7 +17,7 @@ userRouter.post('/user/signup',(req,res)=>{
 })
 
 
-userRouter.post('/user/signin',(req,res)=>{
+userRouter.post('/signin',(req,res)=>{
 
   res.json({
 
@@ -25,7 +27,7 @@ userRouter.post('/user/signin',(req,res)=>{
 
 
 
-userRouter.get('/user/purchases',(req,res)=>{
+userRouter.get('/purchases',(req,res)=>{
 
   res.json({
 
@@ -33,7 +35,4 @@ userRouter.get('/user/purchases',(req,res)=>{
   })
 })
 
-module.exports={
-
-  userRouter:userRouter
-}
+export default userRouter;

@@ -1,7 +1,9 @@
 
-const express=require('express')
-const { userRouter } = require('./routes/user')
-const {courseRouter}=require('./routes/course')
+import express from 'express'
+
+
+import userRouter from'./routes/user.js'
+import courseRouter from'./routes/course.js'
 
 const app=express()
 

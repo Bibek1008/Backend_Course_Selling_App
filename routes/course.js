@@ -1,12 +1,11 @@
 
-const {Router}=require('router')
-
+import { Router } from 'express';
 
 const courseRouter=Router();
 
 
 
-courseRouter.get('/courses',(req,res)=>{
+courseRouter.get('/preview',(req,res)=>{
 
   res.json({
 
@@ -17,7 +16,7 @@ courseRouter.get('/courses',(req,res)=>{
 
 
 
-courseRouter.post('/user/purchase',(req,res)=>{
+courseRouter.post('/purchase',(req,res)=>{
 
   res.json({
 
@@ -25,6 +24,4 @@ courseRouter.post('/user/purchase',(req,res)=>{
   })
 })
 
-module.export={
-  courseRouter:courseRouter
-}
+export default courseRouter;
