@@ -33,14 +33,14 @@ adminRouter.use(adminMiddleware)
 
 
 
-adminRouter.post('/course',(req,res)=>{
+adminRouter.post('/',(req,res)=>{
   res.json({
 
     message:"you can add these course"
   })
 
 })
-adminRouter.put('/course',(req,res)=>{
+adminRouter.put('/',(req,res)=>{
   res.json({
 
     message:"these are your changed courses"
@@ -48,7 +48,7 @@ adminRouter.put('/course',(req,res)=>{
 
 })
 
-adminRouter.get('/course/bulk',(req,res)=>{
+adminRouter.get('/bulk',(req,res)=>{
   res.json({
 
     message:"these are your courses"

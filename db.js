@@ -3,7 +3,6 @@
 import mongoose from "mongoose";
 
 const ObjectId = mongoose.Types.ObjectId;
-mongoose.connect("mongodb+srv://Krishnagod:Bibek2026@cluster1.9usg1fr.mongodb.net/course_selling_app")
 
 const userSchema=new mongoose.Schema({
 
