@@ -19,7 +19,7 @@ app.use('/admin',adminRouter);
 
 async function main() {
 
-  await mongoose.connect("mongodb+srv://Krishnagod:Bibek2026@cluster1.9usg1fr.mongodb.net/course_selling_app");
+ 
 
   app.listen(3000);
   console.log("Your server is started")
